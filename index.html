@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Abort APi example</title>
+  <style>
+    .wrapper {
+      width: 70%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    video {
+      max-width: 100%;
+    }
+
+    .wrapper>div {
+      margin-bottom: 10px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+ 
+  </style>
+  <script src="./slide-input-wc.js" type="module" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Simple offline video player</h1>
+    <div class="controls">
+      <button class="download">Download video</button>
+      <button class="play">Play Audio</button>
+      <button class="abort">Cancel download</button>
+      <p class="reports"></p>
+    </div>
+    <range-slider min="0" max="100" step="1" value="10" oninput="onSlideChange(this)"></range-slider>
+    <div class="videoWrapper hidden">
+      <p>Sintel © copyright Blender Foundation | <a href="http://www.sintel.org/">www.sintel.org</a>.</p>
+    </div>
+  </div>
+</body>
+<script src="./app.js">
+
+</script>
+
+</html>
